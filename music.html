@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <title>
+        music
+    </title>
+    <style>
+
+
+h1
+{
+    text-align:center;
+    font-family: cursive;
+}
+img
+{
+    position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+</style>
+</head>
+<body>
+    <h1>CRAZY FROG</h1>
+    <img src="fs.jpg" id="f1" >
+    <audio id="ad">
+        <source src="m1.mp3" type="audio/mp3">
+
+    </audio>
+<script >
+
+        var ad=document.getElementById("ad");
+        var displayImage=document.getElementById('f1');
+        displayImage.onclick=function (){
+            if(ad.paused){
+                ad.play();
+                displayImage.src='sd.jpg';
+            }
+            else 
+        {
+            
+           ad.pause();  
+           displayImage.src='fs.jpg';
+        }
+
+        }
+
+        
+       
+       
+    
+</script>
+   
+   
+
+    </body>
+</html>    
